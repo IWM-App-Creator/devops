@@ -20,4 +20,4 @@ jobs:
         ftp-username: "workflow@mrpgmanagement.com"
         ftp-password: "S(OO3UHZMJs="
         local-dir: ./
-        git-ftp-args: --insecure # Optional: Additional arguments for git-ftp
+  
