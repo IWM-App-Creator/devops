@@ -16,8 +16,9 @@ jobs:
     - name: FTP Deploy
       uses: SamKirkland/FTP-Deploy-Action@4.1.0
       with:
-        ftp-server: "ftp.mrpgmanagement.com"
-        ftp-username: "workflow@mrpgmanagement.com"
-        ftp-password: "S(OO3UHZMJs="
+        ftp-server: ftp.mrpgmanagement.com
+        ftp-username: ${{ secrets.FTP_USERNAME }}
+        ftp-password: ${{ secrets.FTP_PASSWORD }}
         local-dir: ./
+        git-ftp-args: --insecure
   
